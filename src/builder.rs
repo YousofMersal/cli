@@ -466,7 +466,7 @@ pub fn gen_page(config: &DioxusConfig, serve: bool) -> String {
         .unwrap_or_default()
         .contains_key("tailwindcss")
     {
-        style_str.push_str("<link rel=\"stylesheet\" href=\"tailwind.css\">\n");
+        style_str.push_str("<link rel=\"stylesheet\" href=\"/tailwind.css\">\n");
     }
     html = html.replace("{style_include}", &style_str);
 
